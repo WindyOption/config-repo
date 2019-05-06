@@ -8,7 +8,7 @@ druid:
   driver-class: com.mysql.jdbc.Driver
   username: root
   password: root
-  druid.initial-size=1
-druid.min-idle=1
-druid.max-active=20
-druid.test-on-borrow=true
+  initial-size: 1
+  min-idle: 1
+  max-active: 20
+  test-on-borrow: true
