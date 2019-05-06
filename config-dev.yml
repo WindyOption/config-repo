@@ -3,6 +3,6 @@ spring:
     active: dev
   cloud:
     config:
-    label: master
-    profile: dev
-    uri: http://localhost:1111/
+      label: master
+      profile: dev
+      uri: http://localhost:1111/
