@@ -6,11 +6,11 @@
 # datasource
 spring:
   datasource:
-    druid:
-      driver-calss-name: com.mysql.jdbc.Driver
-      url: jdbc:mysql://183.6.111.117:50009/cloud-vue?useUnicode=true&characterEncoding=utf8&useSSL=false
-      username: fast
-      password: Fast123_
+    driver-class-name: org.gjt.mm.mysql.Driver      # 配置MySQL的驱动程序类
+    url: jdbc:mysql://183.6.111.117:50009/cloud-vue?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: fast
+    password: Fast123_
+    dbcp2:
       initial-size: 5
       min-idle: 5
       max-active: 20
@@ -18,4 +18,5 @@ spring:
       #waiting times /ms
       max-wait: 60000
       
+
 
