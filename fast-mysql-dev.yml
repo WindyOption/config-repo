@@ -4,12 +4,18 @@
 # ===================================================================
 
 # datasource
-druid:
-  url: jdbc:mysql://localhost:3306/cloud-vue?useUnicode=true&characterEncoding=utf8&useSSL=false
-  driver-class: com.mysql.jdbc.Driver
-  username: root
-  password: root
-  initial-size: 1
-  min-idle: 1
-  max-active: 20
-  test-on-borrow: true
+spring:
+  datasource:
+    druid:
+      drover-calss-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/cloud-vue?useUnicode=true&characterEncoding=utf8&useSSL=false
+      username: root
+      password: root
+      initial-size: 5
+      min-idle: 5
+      max-active: 20
+      test-on-borrow: true
+      #waiting times /ms
+      max-wait=60000
+      
+
