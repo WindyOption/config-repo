@@ -6,7 +6,7 @@
 # datasource
 spring:
   datasource:
-    driver-class-name: org.gjt.mm.mysql.Driver      # 配置MySQL的驱动程序类
+    driver-class-name: com.mysql.jdbc.Driver      # 配置MySQL的驱动程序类
     url: jdbc:mysql://183.6.111.117:50009/cloud-vue?useUnicode=true&characterEncoding=utf8&useSSL=false
     username: fast
     password: Fast123_
