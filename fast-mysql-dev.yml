@@ -16,6 +16,6 @@ spring:
       max-active: 20
       test-on-borrow: true
       #waiting times /ms
-      max-wait=60000
+      max-wait: 60000
       
 
