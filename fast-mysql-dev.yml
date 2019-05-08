@@ -8,7 +8,7 @@ spring:
   datasource:
     druid:
       drover-calss-name: com.mysql.jdbc.Driver
-      url: jdbc:mysql://localhost:3306/cloud-vue?useUnicode=true&characterEncoding=utf8&useSSL=false
+      url: jdbc:mysql://183.6.111.117:50009/cloud-vue?useUnicode=true&characterEncoding=utf8&useSSL=false
       username: root
       password: root
       initial-size: 5
