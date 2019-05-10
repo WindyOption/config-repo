@@ -11,5 +11,6 @@ spring:
         - Path=/fast-product/**
         filters:
         - StripPrefix=1
+        - Auth
         #- RewritePath=/employee/(?<path>.*), /$\{path}
   
