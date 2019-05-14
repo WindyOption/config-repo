@@ -1,3 +1,5 @@
+server:
+  port: 1112
 spring:
   cloud:
     gateway:
