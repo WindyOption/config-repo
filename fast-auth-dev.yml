@@ -1,4 +1,8 @@
 server:
-  servlet:
-    context-path: /uaa
+  context-path: /uaa
   port: 1113
+security:
+  basic:
+    enable: false
+  user:
+    password: password
