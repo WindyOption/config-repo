@@ -15,6 +15,12 @@ spring:
         - StripPrefix=1
         #- Auth
         #- RewritePath=/employee/(?<path>.*), /$\{path}
+      - id: fast-sysManager
+        uri: lb://fast-sysManager
+        predicates:
+        - Path=/fast-sysManager/**
+        filters:
+        - StripPrefix=1
 logging:
   level:
     org.springframework.cloud.gateway: trace
