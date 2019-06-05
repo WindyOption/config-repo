@@ -13,7 +13,7 @@ spring:
         - Path=/fast-product/**
         filters:
         - StripPrefix=1
-        - Auth
+        #- Auth
         #- RewritePath=/employee/(?<path>.*), /$\{path}
 logging:
   level:
