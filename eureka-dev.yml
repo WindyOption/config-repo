@@ -4,3 +4,5 @@ eureka:
   client:
     service-url:
       defaultZone: http://${eureka.instance.hostname}:1110/eureka/
+security:
+  session: stateless
