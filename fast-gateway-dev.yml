@@ -21,6 +21,12 @@ spring:
         - Path=/fast-sysManager/**
         filters:
         - StripPrefix=1
+      - id: fast-auth
+        uri: lb://fast-auth
+        predicates:
+        - Path=/fast-auth/**
+        filters:
+        - StripPrefix=1
 logging:
   level:
     org.springframework.cloud.gateway: trace
