@@ -1,10 +1,4 @@
 server:
-  context-path: /uaa
   port: 1113
-security:
-  basic:
-    enable: false
-  user:
-    password: password
 logging:
   level.org.springframework.security: DEBUG
