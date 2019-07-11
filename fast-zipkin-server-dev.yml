@@ -5,3 +5,7 @@ management:
     web:
       server:
         auto-time-requests: false
+        
+logging:
+  level:
+    root: debug
