@@ -3,7 +3,6 @@ spring:
     base-url: http://localhost:1113
     sender:
       type: web
-spring:
   sleuth:
     sampler:
       probability: 1.0
