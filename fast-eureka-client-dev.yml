@@ -1,6 +1,6 @@
 eureka:
   instance:
-    hostname: localhost
+    hostname: 192.168.100.14
   client:
     service-url:
       defaultZone: http://${eureka.instance.hostname}:1110/eureka/
