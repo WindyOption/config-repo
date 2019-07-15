@@ -2,7 +2,6 @@ server:
   port: 1110
 eureka:
   instance:
-    prefer-ip-address: true
     # server default time:30s
     lease-renewal-interval-in-seconds: 30
   environment: dev
