@@ -2,3 +2,6 @@ logging:
   level:
     org.springframework.web: debug
     com.fast.product: debug
+    net:
+      lemonsoft:
+        coder_city: debug
