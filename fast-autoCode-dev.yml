@@ -1,1 +1,4 @@
 spring:
+  freemarker:
+    charset: UTF-8
+    content-type: text/html
