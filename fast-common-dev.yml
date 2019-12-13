@@ -1,8 +1,7 @@
-# spring
+# spring session
 spring:
-  profiles:
-    active: dev
   session: stateless
+  
 #ribbon
 ribbon:
   ReadTimeout: 5000
