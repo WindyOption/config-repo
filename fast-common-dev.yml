@@ -18,15 +18,4 @@ management:
 #        exclude: env,beans
 #        include: health,info,refresh
 
-# log4j2
-logging:
-  level:
-    org.springframework.web: debug
-    com.fast.product: debug
-    net:
-      lemonsoft:
-        coder_city: debug
 
-log4j:
-  configurationFile: classpath:/../target/config/fast-logging-${spring.profiles.active}.yml
-# ${spring.cloud.config.uri}/fast-logging-dev.yml
