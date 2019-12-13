@@ -5,3 +5,5 @@ logging:
   level:
     org.springframework.web: debug
     com.fast.product: debug
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
