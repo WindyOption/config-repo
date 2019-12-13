@@ -27,5 +27,6 @@ logging:
       lemonsoft:
         coder_city: debug
 
-logging:
-  config: classpath: ${spring.cloud.config.uri}/fast-logging-dev.yml
+log4j:
+  configurationFile: classpath:/../target/config/fast-logging-${spring.profiles.active}.yml
+# ${spring.cloud.config.uri}/fast-logging-dev.yml
