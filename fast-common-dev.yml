@@ -1,0 +1,29 @@
+# spring
+spring:
+  profiles:
+    active: dev
+  session: stateless
+#ribbon
+ribbon:
+  ReadTimeout: 5000
+  ConnectTimeout: 1000
+  # 失败重试 false只对get重试
+  OkToRetryOnAllOperations: false
+
+#management
+management:
+  endpoints:
+    web:
+      expose:
+        include: "*"
+#        exclude: env,beans
+#        include: health,info,refresh
+
+# log4j2
+logging:
+  level:
+    org.springframework.web: debug
+    com.fast.product: debug
+    net:
+      lemonsoft:
+        coder_city: debug
