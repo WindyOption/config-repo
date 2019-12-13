@@ -28,4 +28,4 @@ logging:
         coder_city: debug
 
 logging:
-  config: classpath: ${spring.application.name}/fast-logging-dev.yml
+  config: classpath: ${spring.cloud.config.uri}/fast-logging-dev.yml
