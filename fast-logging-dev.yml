@@ -8,12 +8,13 @@ Appenders:
     - name: ROLLING_FILE
       ignoreExceptions: false
       fileName: /logs/${project.name}.log
-      filePattern: "/logs/$${date:yyyy-MM}/${spring.application.name} -%d{yyyy-MM-dd}-%i.log.gz"
+      #filePattern 文件发生Rolling时，转移和重命名规则
+      filePattern: "/logs/$${date:yyyy-MM}/{spring.application.name} -%d{yyyy-MM-dd}-%i.log.gz"
       PatternLayout:
         pattern: "%d{yyyy-MM-dd HH:mm:ss,SSS}:%4p %t (%F:%L) - %m%n"
-      Async:
-        AppemderRef: 
-          - ref: ROLLING_FILE
+#      Async:
+#        AppederRef:
+#          - ref: ROLLING_FILE
       Policies:
         SizeBasedTriggeringPolicy:
           size: "256 MB"
@@ -24,10 +25,16 @@ Loggers:
     level: info
     AppenderRef:
       - ref: ROLLING_FILE
+      - ref: CONSOLE
+#      - ref: EXCEPTION_ROLLING_FILE
   Logger: #单独设置某些包的输出级别
+    - name: com.fast.product.mapper #复数加上-
+      additivity: false #去除重复的log
+      level: debug
+      AppenderRef:
+        ref: ROLLING_FILE #复数加上-
     - name: com.fast.product.mapper #复数加上-
       additivity: false #去除重复的log
       level: trace
       AppenderRef:
-        - ref: CONSOLE #复数加上-
-        - ref: ROLLING_FILE #复数加上-
+        ref: CONSOLE #复数加上-
