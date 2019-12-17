@@ -7,9 +7,9 @@ Appenders:
   RollingFile: # 输出到文件，超过256MB归档
     - name: ROLLING_FILE
       ignoreExceptions: false
-      fileName: /logs/${env:spring.application.name}.log
+      fileName: /logs/${sys:log.name}.log
       #filePattern 文件发生Rolling时，转移和重命名规则
-      filePattern: "/logs/$${date:yyyy-MM}/${spring.application.name} -%d{yyyy-MM-dd}-%i.log.gz"
+      filePattern: "/logs/$${date:yyyy-MM}/${sys:log.name} -%d{yyyy-MM-dd}-%i.log.gz"
       PatternLayout:
         pattern: "%d{yyyy-MM-dd HH:mm:ss,SSS}:%4p %t (%F:%L) - %m%n"
 #      Async:
