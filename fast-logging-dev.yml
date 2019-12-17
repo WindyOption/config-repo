@@ -4,7 +4,7 @@ Configuration:
       - name: log.path
         value: /logs
       - name: project.name
-        value: ${sys:test}
+        value: ${sys:log.path}
       - name: log.pattern
         value: "%d{yyyy-MM-dd HH:mm:ss.SSS} -%5p ${PID:-} [%15.15t] %-30.30C{1.} : %m%n"
         # "%d{yyyy-MM-dd HH:mm:ss,SSS}:%4p %t (%F:%L) - %m%n"
