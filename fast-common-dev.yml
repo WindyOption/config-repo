@@ -26,4 +26,4 @@ logging:
     net:
       lemonsoft:
         coder_city: debug
-  #config: ${spring.cloud.config.uri}/fast-logging-${spring.profiles.active}.yml
+  config: ${spring.cloud.config.uri}/fast-logging-${spring.profiles.active}.yml
