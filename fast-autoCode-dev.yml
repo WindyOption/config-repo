@@ -1,6 +1,16 @@
 spring:
   freemarker:
     charset: UTF-8
+    #content-type: text/html
+    suffix: ftl
+    request-context-attribute: request
     content-type: text/html
+    enabled: true
+    cache: false
+    #allow-request-override: false
+    #expose-request-attributes: true
+    #expose-session-attributes: true
+    #expose-spring-macro-helpers: true
+    #template-loader-path: classpath:/templates/
 server:
   port: 2130
