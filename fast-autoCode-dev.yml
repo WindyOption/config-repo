@@ -2,3 +2,5 @@ spring:
   freemarker:
     charset: UTF-8
     content-type: text/html
+server:
+  port: 2130
