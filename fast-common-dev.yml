@@ -1,6 +1,8 @@
 # spring session
 spring:
   session: stateless
+  mvc: /file/**
+
   
 #ribbon
 ribbon:
@@ -19,11 +21,5 @@ management:
 #        include: health,info,refresh
 
 # log4j2
-logging:
-  level:
-    org.springframework.web: debug
-    com.fast.product: debug
-    net:
-      lemonsoft:
-        coder_city: debug
+#logging:
   #config: ${spring.cloud.config.uri}/fast-logging-${spring.profiles.active}.yml
