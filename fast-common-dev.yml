@@ -2,8 +2,8 @@
 spring:
   session: stateless
   mvc: /file/**
-  resource: 
-    static-location: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/,file:./file
+  resources: 
+    static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/,file:./file
   
 #ribbon
 ribbon:
