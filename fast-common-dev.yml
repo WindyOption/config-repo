@@ -1,7 +1,7 @@
 # spring session
 spring:
   session: stateless
-  mvc: /file/**
+  #mvc: /file/**
   resources: 
     static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/
   
