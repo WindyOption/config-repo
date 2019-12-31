@@ -10,12 +10,24 @@ spring:
     url: jdbc:mysql://183.6.111.117:50008/fastmysql?useUnicode=true&characterEncoding=utf8&useSSL=false
     username: fast
     password: Fast123_
-    dbcp2:
-      initial-size: 5
-      min-idle: 5
-      max-active: 20
-      test-on-borrow: true
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari: 
+      pool-name: FastHiariPool
+      maxium-pool-size: 12
+      miniumum: 1
+      idle-timeout: 600000
+      max-lifetime: 1800000
+      connection-timeout: 30000
+      login-timeout: 10
+      validation-timeout: 1000
+      initialization-fail-timeout: 1000
+      connection-test-query: SELECT 1
+    #dbcp2:
+      #initial-size: 5
+      #min-idle: 5
+      #max-active: 20
+      #test-on-borrow: true
       #waiting times /ms
-      max-wait: 60000
+      #max-wait: 60000
       
 
