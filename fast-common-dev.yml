@@ -21,7 +21,7 @@ feign:
 management:
   endpoints:
     web:
-      expose:
+      exposure:
         include: "*"
 #        exclude: env,beans
 #        include: health,info,refresh
