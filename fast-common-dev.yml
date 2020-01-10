@@ -15,7 +15,7 @@ ribbon:
 #允许服务降级
 feign:
   hystrix:
-    enable: true
+    enabled: true
 
 #management
 management:
