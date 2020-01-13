@@ -18,11 +18,13 @@ feign:
     enabled: true
 
 #management
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
+
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"
+        
 #        exclude: env,beans
 #        include: health,info,refresh
 
