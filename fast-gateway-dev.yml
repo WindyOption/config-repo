@@ -24,7 +24,7 @@ spring:
       - id: fast-fast-autoCode
         uri: lb://fast-autoCode
         predicates:
-        - Path=/fast-sysManager/**
+        - Path=/fast-autoCode/**
         filters:
         - StripPrefix=1
       - id: fast-auth
