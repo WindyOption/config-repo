@@ -7,9 +7,9 @@
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver      # 配置MySQL的驱动程序类
-    url: jdbc:mysql://183.6.111.117:50008/fastmysql?useUnicode=true&characterEncoding=utf8&useSSL=false
-    username: fast
-    password: Fast123_
+    url: jdbc:mysql://47.112.36.171:3306/hkb?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: zengchao
     type: com.zaxxer.hikari.HikariDataSource
     hikari: 
       pool-name: FastHiariPool
